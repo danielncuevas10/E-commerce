@@ -1,0 +1,180 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+}
+
+nav {
+    background-color: #111;
+    color: whitesmoke;
+    padding: 20px 50px;
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: rgb(214, 220, 220);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.searchInput {
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder {
+    color: lightslategrey;
+}
+
+.limitedOffer {
+    font-size: 20px;
+    border-bottom: 5px solid green;
+    cursor: pointer;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem {
+    margin-right: 45px;
+    cursor: pointer;
+    color: rgb(189, 205, 205);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.slider {
+    background-image: url(./assets/black-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 600vw;
+    transition: all 1s ease-in-out;
+}
+
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slideBg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: bisque;
+}
+
+.sliderImg {
+    z-index: 1;
+}
+
+.sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: -20%;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.sliderPrice {
+    position: absolute;
+    top: 10%;
+    left: -20%;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    border-bottom: 3px solid white;
+    z-index: 1;
+}
+
+.buyButton {
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    color: grey;
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.buyButton:hover {
+    background-color: black;
+    color: white;
+}
+.sliderItem:nth-child(1) .slideBg {
+    background-color: rgb(150, 155, 155);
+}
+
+/* Backgrounds */ 
+.sliderItem:nth-child(2) {
+    background-image: url(./assets/blue-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Circle colors*/
+
+.sliderItem:nth-child(2) .slideBg {
+    background-color: rgb(34, 149, 110);
+}
+.sliderItem:nth-child(3) {
+    background-color: rgb(124, 142, 136);
+}
+.sliderItem:nth-child(4) {
+    background-color: rgb(74, 76, 76);
+}
+.sliderItem:nth-child(5) {
+    background-color: rgb(157, 151, 129);
+}
+
+/*PRICES COLOR */
+.sliderItem:nth-child(2) .sliderPrice {
+    color: aquamarine;
+}
+.sliderItem:nth-child(3) .sliderPrice {
+    color:  bisque;
+}
+.sliderItem:nth-child(3) .sliderTitle {
+    color:  black;
+}
+.sliderItem:nth-child(4) .sliderPrice {
+    color: rgb(138, 143, 143);
+}
+.sliderItem:nth-child(4) .sliderTitle {
+    color: rgb(138, 143, 143);
+}
+
+.sliderItem:nth-child(5) .sliderPrice {
+    color: rgb(83, 83, 80);
+}
+.sliderItem:nth-child(5) .sliderTitle {
+    color: rgb(83, 83, 80);
+}
+
