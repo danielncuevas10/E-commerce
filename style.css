@@ -100,37 +100,39 @@ nav {
 }
 
 .sliderTitle {
-    position: absolute;
-    top: 10%;
-    right: -20%;
-    color: white;
-    font-size: 50px;
-    font-weight: 900;
-    z-index: 1;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  z-index: 1;
 }
 
 .sliderPrice {
     position: absolute;
     top: 10%;
-    left: -20%;
+    left: 10%;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 300;
     border-bottom: 3px solid white;
     z-index: 1;
 }
 
+
 .buyButton {
     position: absolute;
     top: 50%;
-    right: -10%;
+    right: 10%;
     color: grey;
     font-size: 20px;
     font-weight: 200;
     cursor: pointer;
     border-color: transparent;
     border-radius: 10px;
-    width: 20%;
+    width: 10%;
     height: 50px;
 }
 
@@ -177,10 +179,10 @@ nav {
     color:  black;
 }
 .sliderItem:nth-child(4) .sliderPrice {
-    color: rgb(138, 143, 143);
+    color: rgb(206, 210, 210);
 }
 .sliderItem:nth-child(4) .sliderTitle {
-    color: rgb(138, 143, 143);
+    color: rgb(243, 248, 248);
 }
 
 .sliderItem:nth-child(5) .sliderPrice {
@@ -443,6 +445,17 @@ label {
     text-align: center;
 }
 
+.nsButton {
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.nsButton:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
 .nsImg {
     width: 100%;
     height: 100%;
@@ -516,17 +529,27 @@ footer {
     margin-right: 10px;
 }
 
+.fMail .fInput{
+    border-radius: 5px;
+}
+.fMail .fButton{
+    border-radius: 5px;
+}
+
 .copyright {
     font-weight: 300;
     font-size: 15px;
     height: 50px;
     width: 100%;
     display: flex;
-    background-color: gray;
+    background-color: whitesmoke;
     justify-content: center;
     align-items: center;
 }
 
+.container-footer {
+    bottom: 50px;
+}
 /* MEDIA Queries */
 
 @media screen and (max-width: 480px) {
@@ -714,11 +737,10 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    .fIcon {
+    .footerRightMenu .fIcon {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        align-content:space-between;
     }
     .copyright {
         font-weight: 500;
@@ -727,7 +749,7 @@ footer {
         width: 100%;
         display: flex;
         align-items: end;
-        background-color: whitesmoke;
+        background-color: rgb(201, 199, 199);
         justify-content: center;
         align-items: center;
     }
